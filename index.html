@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Configuration</title>
     <style>
         body {
@@ -13,35 +14,42 @@
             margin: 0;
             background-color: #E2E2E2;
             color: #000000;
-            padding-top: 50px;
+            padding-top: 20px;
         }
+
         .config-container {
             background-color: #FFFFFF;
-            padding: 30px;
+            padding: 20px;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 90%;
+            width: 95%;
             max-width: 600px;
-            margin-top: 20px;
+            margin-top: 10px;
             overflow-y: auto;
-            max-height: calc(100vh - 100px);
+            max-height: calc(100vh - 50px);
         }
+
         h1 {
             color: #FFBC00;
             margin-bottom: 20px;
+            font-size: 24px;
         }
+
         .form-group {
             margin-bottom: 15px;
             text-align: left;
         }
+
         input[type="text"], input[type="file"] {
             width: calc(100% - 22px);
             padding: 10px;
             margin-top: 5px;
             border: 1px solid #FFBC00;
             border-radius: 5px;
+            box-sizing: border-box;
         }
+
         button {
             background-color: #FCD307;
             color: #000000;
@@ -52,10 +60,13 @@
             padding: 10px 20px;
             margin: 5px;
             transition: background-color 0.3s;
+            font-size: 16px;
         }
+
         button:hover {
             background-color: #FFBC00;
         }
+
         .question-box {
             border: 1px solid #FFBC00;
             border-radius: 10px;
@@ -63,10 +74,21 @@
             margin: 10px 0;
             background-color: #f9f9f9;
         }
+
         .question-box img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .config-container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
